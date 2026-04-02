@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Students Information -->
+<Students>
+    <student>
+        <name>Ram</name>
+        <age>20</age>
+        <college>Himalaya Darshan College</college>
+        <program batch="2081">BIM</program>
+        <vechileno></vechileno>
+        <!-- Checking whether he is present -->
+        <present/>
+    </student>
+    <student>
+        <name>Pratistha</name>
+        <age>30</age>
+        <college>Himalaya Darshan College</college>
+        <program batch="2081">BIM</program>
+        <vechileno></vechileno>
+        <!-- Checking whether he is present -->
+    </student>
+</Students>

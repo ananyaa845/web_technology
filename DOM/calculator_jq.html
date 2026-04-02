@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="javascript\jquery-4.0.0.js"></script>
+</head>
+<body>
+    <form action="">
+        First Number: <input type="number" name="n1" id="n1"><br>
+        Second Number:<input type="number" name="n2" id="n2"><br>
+        Operation:
+        <select name="operation" id="operation">
+            <option value="add">Addition</option>
+            <option value="mul">Multiply</option>
+        </select>
+        <br>
+        <input type="submit" id="submit" value="submit"><br>
+        Result:<input type="text" name="result" id="result" disabled> 
+    </form>
+    <script>
+        $("#submit").on("click",function(){
+            event.preventDefault();
+            let n1=Number($("#n1").val());
+            let n2=Number($("#n2").val());
+            $("#result").val(n1+n2);
+            console.log(n1+n2);
+        });
+    </script>
+</body>
+</html>

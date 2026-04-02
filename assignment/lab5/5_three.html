@@ -1,0 +1,67 @@
+<!-- How can we position elements on different locations (position: relative,absolute etc) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position elements</title>
+</head>
+<style>
+    .container
+    {
+        border:1px solid black
+    }
+    .box5{
+        width: 100px;
+        height:100px;
+        background-color: yellow;
+        position:fixed;/*positioned relative to the viewport*/
+        bottom: 0;
+        right:5px;
+    }
+    .box2{
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        position: relative; /*positioned relative to where it normally should be.*/
+        top:50px;
+        left:130px;
+        color:white;
+    }
+    .box3{
+        width: 70px;
+        height: 70px;
+        position:absolute;/*positioned relative to its nearest ancestor.*/
+        background-color: pink;
+        left: 200px;
+        top:170px;
+
+    }
+    .box1{
+        width:100%;
+        height:40px;
+        background-color:grey;
+        position: sticky; /*positioned based on scroll bar*/
+        top:0;
+    }
+    .box4{
+        width: 100px;
+        height: 100px;
+        position:static; /*default position of element*/
+        background-color: green;
+    }
+</style>
+<body>
+    <div class="box1">sticky header</div><br>
+    <div class="container">
+        <div class="box2">Relative box</div>    
+        <div class="box3">absolute</div>
+        <div class="box4">static </div>
+    </div>
+    <div class="box5">Fixed box</div>
+    
+    <div style="height: 1000px;">
+        <p>Scroll to check sticky and fixed positions' property.</p>
+    </div>
+</body>
+</html>

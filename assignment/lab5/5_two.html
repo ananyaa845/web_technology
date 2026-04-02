@@ -1,0 +1,41 @@
+<!-- Create a responsive design using media queries. -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS media query</title>
+ </head>
+ <style>
+    div{
+        margin:5px;
+        width:100px;
+        height:100px;
+        background-color: grey;
+    }
+    @media(max-width:768px) 
+    {
+     body{
+        background-color: pink;
+     } 
+    
+    }
+    @media(min-width:769px)
+    {
+        body{
+            background-color: aquamarine;
+        }
+        div{
+        display: inline-block;
+        }  
+        
+    }
+
+ </style>
+ <body>
+    
+        <div class="b1"></div>
+        <div class="b2"></div>
+        <div class="b3"></div>
+ </body>
+ </html>

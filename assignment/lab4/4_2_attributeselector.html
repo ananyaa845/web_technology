@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attribute Selectors</title>
+    <style>
+        /* Select input with type text */
+        input[type="text"] {
+            border: 2px solid black;
+            background-color: #f0f0f0;
+        }
+
+        /* Select input with type password */
+        input[type="password"] {
+            border: 2px solid red;
+            background-color: #ffe6e6;
+        }
+
+        /* Select links that open in new tab */
+        a[target="_blank"] {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Attribute Selectors Example</h1>
+
+    <input type="text" placeholder="Enter your name"><br><br>
+
+    <input type="password" placeholder="Enter your password"><br><br>
+
+    <a href="https://example.com" target="_blank">
+        Open Example in New Tab
+    </a>
+
+</body>
+</html>

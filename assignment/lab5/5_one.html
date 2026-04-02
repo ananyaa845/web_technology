@@ -1,0 +1,60 @@
+<!--How can we use a box model in HTML  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            margin: 20px;
+        }
+        .c1{
+            border:2px solid black; 
+            width:200px;
+            height:150px;
+            padding:20px;
+            box-sizing: border-box;
+        }
+        .c2{
+            border: 2px solid black;
+            padding:15px;
+            width:150px;/*Total width=150 including border and padding.*/
+            height: 150px;/*Total height=150 including border and padding.*/
+            box-sizing: border-box;
+
+
+        }
+        .c3{
+            border: 2px solid black;
+            padding: 30px;
+            width: 215px;  
+            /* total width: 215+60+4 = 279 */
+            height:215px;
+            /* Total height: 215+60+4 = 279 */
+            box-sizing:content-box;  
+        }
+    </style>
+</head>
+<body>
+    <div class="c1">
+        <p>Container 1</p>
+    </div>
+    <div class="c2">
+        <p>Container 2</p>
+    </div>
+    <div class="c3">
+        <p>Container 3</p>
+    </div>
+    <!-- "box-sizing" has two main options: content-box and border-box.
+     content-box (default): width and height apply only to the content.
+     Padding and border are added outside, increasing the total size.
+
+     border-box: width and height include the content, padding, and border.
+     So the total size of the element stays the same. -->
+</body>
+</html>

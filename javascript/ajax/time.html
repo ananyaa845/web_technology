@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="time"></div>
+    <script>
+        const timeElement=document. getElementById("time");
+        let num=1;
+        timeElement.textContent=num;
+        let si= setInterval(()=>{
+            num++;
+            timeElement.textContent=num;
+        },1000);
+        let si2=setInterval(()=>{
+            console.log("Hello");
+        },1000);
+        //set timeout, clear interval
+    </script>
+</body>
+</html>

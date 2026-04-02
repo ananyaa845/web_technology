@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         window.onload= function()//unamed function
+         {
+            // custom_alert();
+             //console.log("hello");
+            //custom_name("ram");
+         }   //functions after the window loads.
+    </script>
+</head>
+<body>
+    <!-- using function through button <button onclick="custom_alert()">Click Me</button> -->
+    <script>
+       /* function custom_alert()
+        {
+            alert("this is a custom alert");
+        }
+        function custom_name(name){
+            alert(`hello ${name}`);
+        }
+        function fullname(n,s)
+        {
+            return n+" "+s;
+        }
+        let fn= fullname("pratistha","subedi");
+        console.log(fn);
+
+        //unnamed function
+        let fun= function (name, l)
+        {
+            return name+" "+l;
+        };     //add semicolon at the end of unnamed function
+        console.log(fun("abc","xyz"))*/
+        function hel()
+        {
+            return "hello";
+        }
+        console.log(hel());
+
+        //arrow function
+        let hello = () => "hello"; 
+         //function having arguments
+         let hello_user= (name) => "hello"+" "+ name; //return value after the arrow.
+        console.log(hello()+"  "+hello_user("ananya"))
+
+        
+    </script>
+
+</body>
+</html>

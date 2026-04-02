@@ -1,0 +1,33 @@
+<!--How can we implement inline, internal and external css. Write css including comments(name 
+selector, class selector, id selector).
+ Also use universal selector to remove margin and padding.
+*Discuss the priority of css aswell in the report and also about the "!important" attribute.*-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=content-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"> <!--external css-->
+        <title>Usage of CSS</title>
+        <!--Internal CSS-->
+        <style> 
+        /*Internal CSS*/
+            .box{             
+                border: 3px dotted brown;
+                width: 200px ;
+                height: 200px;
+            }
+        </style> 
+    </head>
+    <body>
+        <h1>Use of CSS</h1> 
+        <!--Inline CSS-->
+        <div class="box" id="first-box" style="border:2px solid black; width:200px;"> 
+            <p>This is a div using inline CSS.</p></div>
+        <div class="box"><p id="paragraph">This is a div using internal CSS.</p></div>
+        
+        <!--The !important rule is used to give the value of a specific property the highest priority.
+        It overrides all previous styling rules for that specific property on that element,
+         added to the end of a CSS declaration, before the semicolon.-->
+    </body>
+</html>

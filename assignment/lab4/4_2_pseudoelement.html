@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pseudo-element Selectors</title>
+    <style>
+        p::before {
+            content: "Note: ";
+            color: red;
+            font-weight: bold;
+        }
+
+        p::after {
+            content: " hello";
+            color: green;
+        }
+
+        p::first-letter {
+            font-size: 30px;
+            color: blue;
+        }
+
+        p::first-line {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Pseudo-element Selectors</h1>
+
+    <p>This is a paragraph demonstrating pseudo-elements.</p>
+    <p>This is another example paragraph.</p>
+
+</body>
+</html>

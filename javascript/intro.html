@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //this is single line comment
+
+        /*This is 
+        multi-line 
+        comment*/
+        //let, var, const -variable declaration
+        let a = 10;
+        console.log(a);
+        let age=16;
+        if(age<18){
+        console.log("you cant vote.");
+        }
+        else
+        {
+        console.log("you can vote.");
+        }
+        let day=1;
+        switch(day)
+        {
+            case 1:
+                console.log("SUNDAY");
+            break;
+            case 2:
+                console.log("MONDAY");
+            break;
+            case 3:
+            console.log("TUESDAY");
+            break;
+
+        }
+        //LOOP
+        for(let i=1;i<=10;i++)
+        {
+            console.log(i);
+        }
+        //table of 11
+        let num=11;
+        for(let i=1;i<=10;i++)
+        {
+            //console.log(num+" X "+i+" = "+num*i);
+            //string interpolation
+            //console.log(`${num} x ${i} = ${num*i}`); //back tick
+        }
+        //for each loop
+        let ages =[18,19,20,21];    
+        console.log(typeof ages);
+        // for (let i=0; i<ages.length;i++)
+        // {
+        //     console.log(ages[i]);
+        // }
+        ages.forEach(function(age)
+        {
+            console.log(age);
+        })
+
+        ages.forEach(function(age,index){
+            console.log(`At index ${index} the age is : ${age}`);
+        })
+        //while loop 
+        let j=0;
+        while(j<10)
+        {
+            j++;
+            console.log(j);
+        }
+
+        //do while loop
+        do{
+            console.log(j);
+            j--;
+        }while(j<5);
+        </script>
+</body>
+</html>

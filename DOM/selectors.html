@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1.get elements by id -->
+     <p id="welcome">Welcome to</p>
+     <div class="cls"></div>
+     <div></div>
+     <script>
+        window.onload=function(){    //loads after.
+        let welcome= document.getElementById("welcome");
+        console.log(welcome.innerText+" HDC");
+        //welcome.innerText = welcome.innerText+" HDC.";
+        welcome.innerHTML="<h1>"+welcome.innerText+" HDC.<h1>"; //innerText would treat html element as text so write innerHTML
+        //2.get elements by tag name
+        let divs=document.getElementsByTagName("div");
+        divs[0].innerText="This is first div.";
+        divs[1].innerText="This is the second div.";
+        //3.get elements by class name
+        let cls=document.getElementsByClassName("cls");
+        cls[0].innerText="This div is modified by class name"}
+     </script>
+
+</body>
+</html>

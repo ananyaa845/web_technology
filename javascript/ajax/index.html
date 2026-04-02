@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo">
+        <h2>The XMLHttpRequest Object</h2>
+        <button type="button" onclick="LoadDoc()">Change Content</button>
+    </div>
+    <script>
+        function LoadDoc(){
+            //1.Creating XMLHttp request object
+            const xhttp=new XMLHttpRequest();
+            if(xhttp.readyState==0)
+        {
+            console.log("0: Request not initialized");
+        }
+            //2.Defining callback function
+            xhttp.onreadystatechange= function()
+            {
+                    if(xhttp.readyState==1)
+                {
+                    console.log("1: Server connection established");
+                }
+                else if(xhttp.readyState==2){
+                    console.log("2:Request Received");
+                }
+                else if(xhttp.readyState==3)
+                {
+                    console.log("3: Processing request");
+                }
+
+                if(this.readyState ==4 && this.status==200)
+                {
+                    console.log("4:Request finished and response is ready");
+                    document.getElementById("demo").innerHTML= this.responseText;
+                    console.log(this.responseText);
+                }
+            };
+            //3.Opening the request
+            
+            //4.Sending the request
+        }
+    </script>
+</body>
+</html>

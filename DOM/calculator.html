@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    First number:<input type="number" id="num1" name="num1" required><br>
+    Second number:<input type="number" name="num2" id="num2" required><br>
+    <button onclick="ad()">ADD</button><br>
+    <button id="add">add</button> <!--Event listener-->
+    <hr>
+    Result:<span id="result"></span><hr>
+    <button id="hello">Click</button><hr>
+    <div>
+        <p id="one">some text</p>
+    </div>
+    <script>
+        function ad(){
+        let num1= document.getElementById("num1").value;
+        let num2=document.getElementById("num2");
+        let result=document.getElementById("result");
+        result.innerText=Number(num1)+Number(num2.value);
+        console.log(num1);
+        }
+        
+        //EVENT LISTENER
+        let addBtn=document.getElementById("add");
+        addBtn.addEventListener("click", function(){
+        let num1= document.getElementById("num1").value;
+        let num2=document.getElementById("num2");
+        let result=document.getElementById("result");
+        result.innerText=Number(num1)+Number(num2.value);
+        console.log(num1);
+        })
+
+        let btn =document.getElementById("hello");
+        let one=document.getElementById("one");
+
+        one.addEventListener("mouseenter",function(){
+            console.log("User has entered the paragraph.")
+        })
+
+        one.addEventListener("mouseleave",function(){
+            console.log("User has exited the paragraph.")
+        })
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* let students {
+             firstname: "Ram",
+             address: "Brt",
+             lastname: "Thapa",
+             FullName: () => `${this.firstname}${this.lastname}`,
+            
+         };*/
+
+        /*class Person{
+            address="Biratnagar";
+            constructor(fn, ln)
+            {
+                this.firstname=fn;
+                this.lastname=ln;
+            }
+            #FullName(){ // use # for private properties
+                return `${this.firstname} ${this.lastname}`;
+            }
+
+            hello(){
+                console.log("Hello" + this.#FullName());
+            }
+        }
+        let p1 = new Person("Ram", "Thapa");
+        p1.hello();*/
+
+
+
+        // BOOLEAN
+
+        let b =new Boolean(true);
+        console.log(typeof b);
+        let s= b.toString();
+        console.log(s);
+        console.log(typeof s);
+        if(b==s)
+        {
+            console.log("b and s are equal");
+
+        }
+        else{
+            console.log("b and s are not equal");
+        }
+
+        //NUMBER
+
+        let n = Number("10");
+        console.log(n);
+        if(isNaN(n))  //equal to a value that is not a number (n)
+        {
+            console.log("n is a not a number");
+        }
+        else{
+            console.log("n is a number");
+        }
+        console.log(Number.MIN_VALUE);
+        console.log(Number.MAX_VALUE);
+
+        //String
+        let name = new String("Ram Kumar Thapa");
+        console.log(typeof name);
+        console.log(name.length);
+        var na = name.toString();
+        console.log(typeof na);
+        
+        let str= "Apple,Banana,Kiwi";
+        let part= str.slice(7,13);
+        console.log(part);
+        str="Apple, Banana, Kiwi";
+        part= str.slice(-12,-6);
+        console.log(part);
+
+        let text="pleasse visit College";
+        let newText= text.replace("College", "HDC");
+        console.log(newText);
+
+        console.log(newText.toUpperCase());
+        console.log(newText.toLowerCase());
+
+        let fruits=str.split(",");//split the string to array(conversion) spaces and characters written inside the split is not shown in array
+        console.log(fruits);
+
+        let t= "Hello";
+        let t2="World";
+        let t3= t.concat(" ", t2,"!");
+        console.log(t3);
+
+        console.log(t.charAt(0));
+        console.log(t.charCodeAt(0));
+        console.log("Trim method");
+
+        n1="             RAM          ";
+        console.log(n1.length);
+        console.log(n1);
+        n1=n1.trim();
+        console.log(n1);
+        console.log(n1.length);
+
+    </script>
+</body>
+</html>
