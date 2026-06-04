@@ -13,14 +13,20 @@
         height:100px;
         background-color: grey;
     }
-    @media(max-width:768px) 
+    @media(max-width:600px) /*phones*/
+    {
+        body{
+            background-color:brown
+        }
+    }
+    @media((min-width:601px)and(max-width:768px)) /*tablets*/
     {
      body{
         background-color: pink;
      } 
     
     }
-    @media(min-width:769px)
+    @media(min-width:769px) /*laptop and desktops*/
     {
         body{
             background-color: aquamarine;

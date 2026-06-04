@@ -1,1 +1,66 @@
 <!-- create a table and style it with CSS. -->
+ <!DOCTYPE html>
+ <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Table with CSS</title>
+        <style>
+            table,tr,td,th{
+                border:1px solid black;
+                border-collapse: collapse; /*Remove the double border*/
+                
+            }
+
+            table{
+                width:80%;
+                text-align: center;
+            }
+            th{
+                vertical-align: bottom;
+            }
+            td{
+                height: 50px;
+                vertical-align: middle;
+            }
+            th{
+                height:30px;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <caption><strong>Marks of Students</strong></caption>
+            <tr>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Marks</th>
+            </tr>
+            <tr>
+                <td>Ananya</td>
+                <td>DSA</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>Pratistha</td>
+                <td>Web Technology</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>Sabnam</td>
+                <td>Financial Account</td>
+                <td>78</td>
+            </tr>
+            <tr>
+                <td>Roshika</td>
+                <td>Microprocessor</td>
+                <td>65</td>
+            </tr>
+            <tr>
+                <td>Prasna</td>
+                <td>Statistics</td>
+                <td>70</td>
+            </tr>
+        </table>
+    </body>
+ </html>

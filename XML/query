@@ -1,8 +1,0 @@
-for $student in/students/student
-where $student/age>20
-return <student>{
-    $student/name,
-    $student/age
-}</student>
-count(/students/student[age >=20 and age <=22])
-avg(/students/student[age>10]/age)

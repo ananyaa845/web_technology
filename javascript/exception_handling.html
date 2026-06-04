@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        try{
+            let result=10*a;
+            console.log(result);
+        }
+        catch(e){
+            if(e instanceof ReferenceError){
+                console.log("Reference Error Occured.");
+            }
+        if(e instanceof TypeError){
+            console.log("Type Error Occured.");
+            }
+        console.log("Exception Occured "+e.message);
+        }
+        console.log("hello")
+    </script>
+</body>
+</html>
