@@ -1,1 +1,48 @@
 <!-- Implement different loop statements available in js. -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <script>
+        // 1. for loop
+// Used when you know how many times you want to repeat
+for (let i = 1; i <= 3; i++) {
+    console.log("For Loop iteration:", i);
+}
+
+// 2. while loop
+// Runs as long as the condition is true
+let count = 1;
+while (count <= 2) {
+    console.log("While Loop iteration:", count);
+    count++;
+}
+
+// 3. do...while loop
+// Executes the block at least once, then checks the condition
+let num = 1;
+do {
+    console.log("Do...While Loop iteration:", num);
+    num++;
+} while (num <= 5);
+
+// 4. for...in loop
+// Iterates over the properties (keys) of an object
+let student = { name: "Ananya", age: 20, address:"Biratnagar" };
+for (let key in student) {
+    console.log("Property:", key, "Value:", student[key]);
+}
+
+// 5. for...of loop
+// Iterates over iterable objects like arrays, strings, etc.
+let fruits = ["Apple", "Banana", "Cherry"];
+for (let fruit of fruits) {
+    console.log(fruit);
+}
+    </script>
+ </body>
+ </html>

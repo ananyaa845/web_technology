@@ -1,0 +1,23 @@
+<!-- create a person object with name, address,phone and fullinfo() -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <script>
+        let person={
+            name:"Ananya",
+            address:"BRT",
+            phone:9812345678,
+            fullinfo:function(){
+                console.log(this.name + " "+ this.address+" "+this.phone);
+            }
+        }
+        person.fullinfo();
+    </script>
+    
+ </body>
+ </html>

@@ -1,0 +1,33 @@
+<!-- person class -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <script>
+        class person {
+            name;
+            address;
+             #phone;//private
+  constructor(name, address, phone) {
+    this.name = name;
+    this.address = address;
+    this.#phone = phone;
+  }
+  fullinfo = () => {
+    console.log(this.name + "  " + this.address);
+  };
+  getNumber() {
+    console.log(this.#phone);
+  }
+}
+
+const p1 = new person("Ananya", "biratnagar", 981234678);
+p1.fullinfo();
+p1.getNumber();
+    </script>
+ </body>
+ </html>

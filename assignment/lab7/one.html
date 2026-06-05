@@ -1,0 +1,54 @@
+<!-- create functions with following detail -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <script>
+        // 1. Named function "hello" without parameter
+function hello() {
+    console.log("Hello without parameter!");
+}
+hello(); 
+
+
+// 2. Named function "hello" with parameter
+function hello(name) {
+    console.log("Hello, " + name + "!");
+}
+hello("world");  
+
+
+// 3. Unnamed function (Function Expression) without parameter
+const greet = function() {
+    console.log("Unnamed function without parameter!");
+};
+greet();
+
+
+// 4. Unnamed function (Function Expression) with parameter
+const greetWithName = function(name) {
+    console.log("Unnamed function with parameter: Hello, " + name + "!");
+};
+greetWithName("Ananya");
+
+
+// 5. Arrow function without parameter
+const arrowHello = () => {
+    console.log("Arrow function without parameter!");
+};
+arrowHello();
+
+
+// 6. Arrow function with parameter
+const arrowHelloWithName = (name) => {
+    console.log(`Arrow function with parameter: Hello, ${name}!`);
+};
+arrowHelloWithName("Ananya");
+
+    </script>
+ </body>
+ </html>
